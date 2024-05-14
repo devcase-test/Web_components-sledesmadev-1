@@ -1,0 +1,17 @@
+{
+  "name": "<%= tagName %>",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "start": "tsc && concurrently -k -r \"tsc --watch --preserveWatchOutput\" \"wds\""
+  },
+  "dependencies": {
+    "lit": "^2.0.2"
+  },
+  "devDependencies": {
+    "@web/dev-server": "^0.1.34",
+    "concurrently": "^5.3.0",
+    "typescript": "^4.5.2",
+    "tslib": "^2.3.1"
+  }
+}
